@@ -21,7 +21,7 @@
                     "mysql:host=".$this->db_host.";dbname=".
                     $this->db_name, $this->db_user, $this->db_pass
                 );
-                echo 'Connect Success';
+                //echo 'Connect Success';
 
             } catch (PDOException $exception) {
                 echo 'Connection failed: '.
@@ -30,4 +30,13 @@
 
             return $this->connection;
         }
+
+        public function exceuteQuery($sql = null){
+            # code...
+        }
+
+        public function exceuteNonQuery($sql = null){
+            # code...
+        }
+        
     }

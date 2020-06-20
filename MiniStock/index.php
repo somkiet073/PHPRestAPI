@@ -7,13 +7,14 @@
     $conn = $dbconnect->getConnect();
 
     // Param ที่ได้จากการ Post ค่ามาจากหน้า From หรือ Postman
-    $username='admin';
+    $username='test3';
     $password=md5("123456");
-    $fullname='somkiet paowang';
-    $email='email@email.com';
-    $tel='0811111111';
+    $fullname='test test';
+    $email='email3@email.com';
+    $tel='0833333333';
     $status='1';
 
+    
     // INSERT Data To User
     $strSQL = ' INSERT INTO users (username,password,fullname,email,tel,status) 
                 VALUES (:username,:password,:fullname,:email,:tel,:status)';
